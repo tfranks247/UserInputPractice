@@ -16,8 +16,8 @@ public class Main {
 
         ArrayList<Person> person1 = new ArrayList<>();
         ArrayList<Sibling> sibling1 = new ArrayList<>();
-
-
+String sLoop;
+    do{
         Person person = new Person();
         System.out.println("Enter the name of a person: ");
         name = key.nextLine();
@@ -63,6 +63,9 @@ public class Main {
             counter = counter + 1;
 
         }
+        System.out.println("Enter Another Person? Y or N");
+        sLoop = key.nextLine();
+    } while (sLoop.equals("Y") || sLoop.equals("y"));
     }
 
 }
